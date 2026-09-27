@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeOS Typing Tutor - Complete Edition</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="tutor-container" id="app">
+        <!-- Header -->
+        <div class="tutor-header">
+            <h1>⌨️ LifeOS Typing Tutor</h1>
+            <p class="subtitle">Master touch typing with structured lessons & fun games</p>
+        </div>
+
+        <!-- Stats Bar -->
+        <div class="stats-bar">
+            <div class="stat-box"><div class="value" id="statWPM">0</div><div class="label">WPM</div></div>
+            <div class="stat-box"><div class="value" id="statAccuracy">100%</div><div class="label">Accuracy</div></div>
+            <div class="stat-box"><div class="value" id="statTime">0s</div><div class="label">Time</div></div>
+            <div class="stat-box"><div class="value" id="statStreak">🔥 0</div><div class="label">Best</div></div>
+            <div class="stat-box"><div class="value" id="statCompleted">0/7</div><div class="label">Lessons</div></div>
+        </div>
+
+        <!-- Lesson Progress Overview -->
+        <div class="progress-overview" id="progressOverview"></div>
+
+        <!-- Mode Tabs -->
+        <div class="mode-tabs" id="modeTabs">
+            <button class="mode-tab active" data-mode="home-row">🏠 Home Row</button>
+            <button class="mode-tab" data-mode="top-row">🔝 Top Row</button>
+            <button class="mode-tab" data-mode="bottom-row">🔽 Bottom Row</button>
+            <button class="mode-tab" data-mode="capitals">🔠 Capitals</button>
+            <button class="mode-tab" data-mode="punctuation">❗ Punctuation</button>
+            <button class="mode-tab" data-mode="numbers">🔢 Numbers</button>
+            <button class="mode-tab" data-mode="symbols">💲 Symbols</button>
+            <button class="mode-tab" data-mode="games">🎮 Games</button>
+        </div>
+
+        <!-- Game Card -->
+        <div class="game-card" id="gameCard"></div>
+
+        <!-- Results Overlay -->
+        <div class="results-overlay" id="resultsOverlay">
+            <div class="results-card" id="resultsCard"></div>
+        </div>
+    </div>
+
+   
+</body>
+</html>
